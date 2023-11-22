@@ -5,5 +5,5 @@ import (
 )
 
 type Vehicle struct {
-	midOrm.Vehicle
+	midOrm.Vehicle ///
 }
