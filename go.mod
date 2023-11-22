@@ -1,4 +1,4 @@
-module showroom.middleware
+module github.com/FourWD/showroom.middleware
 
 go 1.20
 
