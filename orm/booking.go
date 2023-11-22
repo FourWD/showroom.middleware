@@ -5,5 +5,5 @@ import (
 )
 
 type Booking struct {
-	midOrm.Booking
+	midOrm.Booking //
 }
