@@ -2,7 +2,7 @@ module github.com/FourWD/showroom.middleware
 
 go 1.20
 
-require github.com/FourWD/middleware v1.5.121
+require github.com/FourWD/middleware v1.5.122
 
 require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
