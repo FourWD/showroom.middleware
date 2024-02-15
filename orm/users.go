@@ -13,4 +13,5 @@ type Users struct {
 	Email        string `json:"email" query:"email" gorm:"type:varchar(50)"`
 	Facebook     string `json:"facebook" query:"facebook" gorm:"type:varchar(50)"`
 	Line         string `json:"line" query:"line" gorm:"type:varchar(20)"`
+	Token        string `json:"token" query:"token" gorm:"type:text"`
 }
