@@ -9,7 +9,7 @@ type Users struct {
 	Username     string `json:"username" query:"username" gorm:"type:varchar(20)"`
 	Password     string `json:"password" query:"password" gorm:"type:varchar(30)"`
 	FileAvatarID string `json:"file_avartar_id" query:"file_avartar_id" gorm:"type:varchar(36)"`
-	Mobile       string `json:"mobile" query:"mobile" gorm:"type:varchar(20);unique"`
+	Mobile       string `json:"mobile" query:"mobile" gorm:"type:varchar(10);unique"`
 	Email        string `json:"email" query:"email" gorm:"type:varchar(50)"`
 	Facebook     string `json:"facebook" query:"facebook" gorm:"type:varchar(50)"`
 	Line         string `json:"line" query:"line" gorm:"type:varchar(20)"`
