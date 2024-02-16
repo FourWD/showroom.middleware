@@ -7,7 +7,7 @@ type Users struct {
 	Firstname    string `json:"firstname" query:"firstname" gorm:"type:varchar(100)"`
 	Lastname     string `json:"lastname" query:"lastname" gorm:"type:varchar(100)"`
 	Username     string `json:"username" query:"username" gorm:"type:varchar(20)"`
-	Password     string `json:"password" query:"password" gorm:"type:varchar(30)"`
+	Password     string `json:"password" query:"password" gorm:"text"`
 	FileAvatarID string `json:"file_avartar_id" query:"file_avartar_id" gorm:"type:varchar(36)"`
 	Mobile       string `json:"mobile" query:"mobile" gorm:"type:varchar(10);unique"`
 	Email        string `json:"email" query:"email" gorm:"type:varchar(50)"`
