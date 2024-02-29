@@ -20,6 +20,8 @@ github.com/FourWD/middleware v1.5.155 h1:C42PqQUC8qluas4f+P5cHbPsnnRk7QVckeXObFE
 github.com/FourWD/middleware v1.5.155/go.mod h1:1tjpL2L2S7TRg54/VfTFZnwknJp9Lb9W0rlJUHD2+ds=
 github.com/FourWD/middleware v1.5.157 h1:zY6k7mx+Y6Nv0NfnXX8cuJIMWxR2yTLHUaRFzYNyqeA=
 github.com/FourWD/middleware v1.5.157/go.mod h1:1tjpL2L2S7TRg54/VfTFZnwknJp9Lb9W0rlJUHD2+ds=
+github.com/FourWD/middleware v1.5.161 h1:4cqR5K3TzYrtrWsEjzEgRtSibN4oeItNnXMBp9PEmBU=
+github.com/FourWD/middleware v1.5.161/go.mod h1:LL2RM3cxf/DDwepbGZkiBr18WBhL4gmNOCD7I2t5g4w=
 github.com/jinzhu/inflection v1.0.0 h1:K317FqzuhWc8YvSVlFMCCUb36O/S9MCKRDI7QkRKD/E=
 github.com/jinzhu/inflection v1.0.0/go.mod h1:h+uFLlag+Qp1Va5pdKtLDYj+kHp5pxUVkryuEj+Srlc=
 github.com/jinzhu/now v1.1.4/go.mod h1:d3SSVoowX0Lcu0IBviAWJpolVfI5UJVZZ7cO71lE/z8=
@@ -27,3 +29,5 @@ github.com/jinzhu/now v1.1.5 h1:/o9tlHleP7gOFmsnYNz3RGnqzefHA47wQpKrrdTIwXQ=
 github.com/jinzhu/now v1.1.5/go.mod h1:d3SSVoowX0Lcu0IBviAWJpolVfI5UJVZZ7cO71lE/z8=
 gorm.io/gorm v1.23.8 h1:h8sGJ+biDgBA1AD1Ha9gFCx7h8npU7AsLdlkX0n2TpE=
 gorm.io/gorm v1.23.8/go.mod h1:l2lP/RyAtc1ynaTjFksBde/O8v9oOGIApu2/xRitmZk=
+gorm.io/gorm v1.25.7 h1:VsD6acwRjz2zFxGO50gPO6AkNs7KKnvfzUjHQhZDz/A=
+gorm.io/gorm v1.25.7/go.mod h1:hbnx/Oo0ChWMn1BIhpy1oYozzpM15i4YPuHDmfYtwg8=
