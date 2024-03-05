@@ -15,4 +15,5 @@ type TempBooking struct {
 	Occupation       string    `json:"occupation" query:"occupation" gorm:"type:varchar(255)"`
 	Telephone        string    `json:"telephone" query:"telephone" gorm:"type:varchar(30)"`
 	CustomerSourceID string    `json:"customer_source_id" query:"customer_source_id" gorm:"type:varchar(36)"`
+	IsJuristic       bool      `json:"is_juristic" query:"is_juristic" gorm:"type:bool"`
 }
