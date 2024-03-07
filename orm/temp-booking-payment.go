@@ -23,7 +23,7 @@ type TempBookingPayment struct {
 	FinanceInstallmentRate float64   `json:"finance_installment_rate" query:"finance_installment_rate" gorm:"type:decimal(14,2)"`
 	InsuranceCompanyID     string    `json:"insurance_company_id" query:"insurance_company_id" gorm:"type:varchar(10)"`
 	PaymentTypeID          string    `json:"payment_type_id" query:"payment_type_id" gorm:"type:varchar(2)"`
-	PaymentAmount          float64   `json:"payment_amount" query:"payment_amount" gorm:"type:decimal(14,2)"`
+	DepositPrice           float64   `json:"deposit_price" query:"deposit_pricet" gorm:"type:decimal(14,2)"`
 	BankID                 string    `json:"bank_id" query:"bank_id" gorm:"type:varchar(2)"`
 	CreditNo               string    `json:"credit_no" query:"credit_no" gorm:"type:varchar(36)"`
 	CreditExpireDate       string    `json:"credit_expire_date" query:"credit_expire_date" gorm:"type:varchar(36)"`
