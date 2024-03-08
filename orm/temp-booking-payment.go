@@ -11,6 +11,7 @@ type TempBookingPayment struct {
 	model.GormModel
 
 	BookingID              string    `json:"booking_id" query:"booking_id" gorm:"type:varchar(36)"`
+	IsAccessory            bool      `json:"is_accessory" query:"is_accessory" gorm:"type:bool"`
 	TotalPrice             float64   `json:"total_price" query:"total_price" gorm:"type:decimal(14,2)"`
 	DownPrice              float64   `json:"down_price" query:"down_price" gorm:"type:decimal(14,2)"`
 	Downpercent            float64   `json:"down_precent" query:"down_precent" gorm:"type:decimal(14,2)"`
@@ -18,8 +19,9 @@ type TempBookingPayment struct {
 	FinanceInstallment     int       `json:"finance_installment" query:"finance_installment" gorm:"type:int(3)"`
 	InterestTypeID         string    `json:"interest_type_id" query:"interest_type_id" gorm:"type:varchar(36)"`
 	SumInsured             float64   `json:"sum_insured" query:"sum_insured" gorm:"type:decimal(14,2)"`
+	Discount               float64   `json:"discount" query:"discount" gorm:"type:decimal(14,2)"`
 	FinanceCompanyID       string    `json:"finance_company_id" query:"finance_company_id" gorm:"type:varchar(10)"`
-	FinanceInterest        float64   `json:"finance_interest" query:"finance_interest" gorm:"type:decimal(3,3)"`
+	FinanceInterest        float64   `json:"finance_interest" query:"finance_interest" gorm:"type:decimal(14,2)"`
 	FinanceInstallmentRate float64   `json:"finance_installment_rate" query:"finance_installment_rate" gorm:"type:decimal(14,2)"`
 	InsuranceCompanyID     string    `json:"insurance_company_id" query:"insurance_company_id" gorm:"type:varchar(10)"`
 	PaymentTypeID          string    `json:"payment_type_id" query:"payment_type_id" gorm:"type:varchar(2)"`
