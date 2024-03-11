@@ -22,6 +22,8 @@ github.com/FourWD/middleware v1.5.157 h1:zY6k7mx+Y6Nv0NfnXX8cuJIMWxR2yTLHUaRFzYN
 github.com/FourWD/middleware v1.5.157/go.mod h1:1tjpL2L2S7TRg54/VfTFZnwknJp9Lb9W0rlJUHD2+ds=
 github.com/FourWD/middleware v1.5.161 h1:4cqR5K3TzYrtrWsEjzEgRtSibN4oeItNnXMBp9PEmBU=
 github.com/FourWD/middleware v1.5.161/go.mod h1:LL2RM3cxf/DDwepbGZkiBr18WBhL4gmNOCD7I2t5g4w=
+github.com/FourWD/middleware v1.5.198 h1:eKhmuf9HutjPWo6+Ixo7qfo5tgEGQ4i8INVD37ezIYI=
+github.com/FourWD/middleware v1.5.198/go.mod h1:Ui7Qw8eNMYOAXqzS4vya7cRXACtmY2TNGGrVCKPQwJc=
 github.com/jinzhu/inflection v1.0.0 h1:K317FqzuhWc8YvSVlFMCCUb36O/S9MCKRDI7QkRKD/E=
 github.com/jinzhu/inflection v1.0.0/go.mod h1:h+uFLlag+Qp1Va5pdKtLDYj+kHp5pxUVkryuEj+Srlc=
 github.com/jinzhu/now v1.1.4/go.mod h1:d3SSVoowX0Lcu0IBviAWJpolVfI5UJVZZ7cO71lE/z8=
