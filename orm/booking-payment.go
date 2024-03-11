@@ -10,6 +10,7 @@ type BookingPayment struct {
 	ID string `json:"id" query:"id" gorm:"type:varchar(36); primary_key"`
 	model.GormModel
 
+	IsAccessory            bool      `json:"is_accessory" query:"is_accessory" gorm:"type:bool"`
 	BookingID              string    `json:"booking_id" query:"booking_id" gorm:"type:varchar(36)"`
 	VehiclePrice           float64   `json:"vehicle_price" query:"vehicle_price" gorm:"type:decimal(14,2)"`
 	VehicleDiscountPrice   float64   `json:"vehicle_discount_price" query:"vehicle_discount_price" gorm:"type:decimal(14,2)"`
@@ -20,6 +21,7 @@ type BookingPayment struct {
 	TotalPrice             float64   `json:"total_price" query:"total_price" gorm:"type:decimal(14,2)"`
 	DownPrice              float64   `json:"down_price" query:"down_price" gorm:"type:decimal(14,2)"`
 	DownPercent            float64   `json:"down_precent" query:"down_precent" gorm:"type:decimal(14,2)"`
+	Discount               float64   `json:"discount" query:"discount" gorm:"type:decimal(14,2)"`
 	FinancePrice           float64   `json:"finance_price" query:"finance_price" gorm:"type:decimal(14,2)"`
 	FinanceMonth           int       `json:"finance_month" query:"finance_month" gorm:"type:int(3)"`
 	FinancePricePerMonth   float64   `json:"finance_price_per_month" query:"finance_price_per_month" gorm:"type:decimal(14,2)"`
