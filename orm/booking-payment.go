@@ -28,7 +28,7 @@ type BookingPayment struct {
 	InterestTypeID         string    `json:"interest_type_id" query:"interest_type_id" gorm:"type:varchar(36)"`
 	InsuranceFund          float64   `json:"insurance_fund" query:"insurance_fund" gorm:"type:decimal(14,2)"` //
 	FinanceID              string    `json:"finance_id" query:"finance_id" gorm:"type:varchar(10)"`
-	FinanceInterest        float64   `json:"finance_interest" query:"finance_interest" gorm:"type:decimal(3,3)"`
+	FinanceInterest        float64   `json:"finance_interest" query:"finance_interest" gorm:"type:decimal(5,3)"`
 	InsuranceID            string    `json:"insurance_id" query:"insurance_id" gorm:"type:varchar(10)"`
 	PaymentTypeID          string    `json:"payment_type_id" query:"payment_type_id" gorm:"type:varchar(2)"`
 	DepositPrice           float64   `json:"deposit_price" query:"deposit_pricet" gorm:"type:decimal(14,2)"`
