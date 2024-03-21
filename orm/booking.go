@@ -21,4 +21,5 @@ type Booking struct {
 	ManagerSignature  string    `json:"manager_signature" query:"manager_signature" gorm:"type:varchar(500)"`
 	EmployeeID        string    `json:"employee_id" query:"employee_id" gorm:"type:varchar(36)"`
 	ManagerID         string    `json:"manager_id" query:"manager_id" gorm:"type:varchar(36)"`
+	IsConsent         bool      `json:"is_consent" query:"is_consent" gorm:"type:bool"`
 }
