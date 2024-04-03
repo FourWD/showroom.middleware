@@ -17,8 +17,11 @@ type Booking struct {
 	CustomerSourceID                string    `json:"customer_source_id" query:"customer_source_id" gorm:"type:varchar(36)"`
 	CustomerTypeID                  string    `json:"customer_type_id" query:"customer_type_id" gorm:"type:varchar(2)"`
 	CustomerSignature               string    `json:"customer_signature" query:"customer_signature" gorm:"type:varchar(500)"`
+	CustomerSignatureDate           time.Time `json:"customer_signature_date" query:"customer_signature_date" gorm:"type:date"`
 	EmployeeSignature               string    `json:"employee_signature" query:"employee_signature" gorm:"type:varchar(500)"`
+	EmployeeSignatureDate           time.Time `json:"employee_signature_date" query:"employee_signature_date" gorm:"type:date"`
 	ManagerSignature                string    `json:"manager_signature" query:"manager_signature" gorm:"type:varchar(500)"`
+	ManagerSignatureDate            time.Time `json:"manager_signature_date" query:"manager_signature_date" gorm:"type:date"`
 	EmployeeID                      string    `json:"employee_id" query:"employee_id" gorm:"type:varchar(36)"`
 	ManagerID                       string    `json:"manager_id" query:"manager_id" gorm:"type:varchar(36)"`
 	IsConsent                       bool      `json:"is_consent" query:"is_consent" gorm:"type:bool"`
