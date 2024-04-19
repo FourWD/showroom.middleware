@@ -32,4 +32,5 @@ type Booking struct {
 	CustomerSignatureLinkExpireDate time.Time `json:"customer_signature_link_expire_date" query:"customer_signature_link_expire_date" gorm:"type:date"`
 	IsSendBookingPDF                bool      `json:"is_send_booking_pdf" query:"is_send_booking_pdf" gorm:"type:bool"`
 	SendBookingPDFDate              time.Time `json:"send_booking_pdf_date" query:"send_booking_pdf_date" gorm:"type:date"`
+	PDFLinkExpireDate               time.Time `json:"pdf_link_expire_date" query:"pdf_link_expire_date" gorm:"type:date"`
 }
