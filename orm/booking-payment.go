@@ -38,6 +38,7 @@ type BookingPayment struct {
 	TransferDate           time.Time `json:"transfer_date" query:"transfer_date"`
 	// PickupDate             time.Time `json:"pickup_date" query:"pickup_date"`
 	// ExpectPickupDate       time.Time `json:"expect_pickup_date" query:"expect_pickup_date"`
-	FileSlip string `json:"file_slip" query:"file_slip" gorm:"type:varchar(500)"`
+	FileSlip     string    `json:"file_slip" query:"file_slip" gorm:"type:varchar(500)"`
+	DeliveryDate time.Time `json:"delivery_date" query:"delivery_date" gorm:"type:date"`
 	model.GormRowOrder
 }
