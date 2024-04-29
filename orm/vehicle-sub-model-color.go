@@ -10,6 +10,7 @@ type VehicleSubModelColors struct {
 	VehicleColorID    string  `json:"vehicle_color_id" query:"vehicle_color_id" gorm:"type:varchar(36)"`
 	YearManufacturing int     `json:"year_manufacturing" query:"year_manufacturing" gorm:"type:varchar(4)"`
 	Price             float64 `json:"price" query:"price" gorm:"type:decimal(14,2)"`
+	VehicleImg        string  `json:"vehicle_img" query:"vehicle_img" gorm:"type:text"`
 	Qty               int     `json:"qty" query:"qty" gorm:"type:int"`
 	model.GormRowOrder
 }
