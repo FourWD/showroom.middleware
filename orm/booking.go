@@ -28,6 +28,7 @@ type Booking struct {
 	IsConsent                       bool      `json:"is_consent" query:"is_consent" gorm:"type:bool"`
 	CustomerSignatureLink           string    `json:"customer_signature_link" query:"customer_signature_link" gorm:"type:varchar(500)"`
 	CustomerPDFLink                 string    `json:"customer_pdf_link" query:"customer_pdf_link" gorm:"type:varchar(500)"`
+	PDFLink                         string    `json:"pdf_link" query:"pdf_link" gorm:"type:varchar(500)"`
 	CustomerSignatureLinkSendDate   time.Time `json:"customer_signature_link_send_date" query:"customer_signature_link_send_date" gorm:"type:date"`
 	CustomerSignatureLinkExpireDate time.Time `json:"customer_signature_link_expire_date" query:"customer_signature_link_expire_date" gorm:"type:date"`
 	IsSendBookingPDF                bool      `json:"is_send_booking_pdf" query:"is_send_booking_pdf" gorm:"type:bool"`
