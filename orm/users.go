@@ -1,7 +1,11 @@
 package orm
 
+import "github.com/FourWD/middleware/model"
+
 type Users struct {
-	ID           string `json:"id" query:"id" gorm:"type:varchar(36);uniqueIndex:idx_id;primary_key"`
+	ID string `json:"id" query:"id" gorm:"type:varchar(36);uniqueIndex:idx_id;primary_key"`
+	model.GormModel
+
 	Code         string `json:"code" query:"code" gorm:"type:varchar(10)"`
 	UserTypeID   string `json:"user_type_id" query:"user_type_id" gorm:"type:varchar(2)"`
 	Firstname    string `json:"firstname" query:"firstname" gorm:"type:varchar(100)"`
