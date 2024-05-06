@@ -26,6 +26,7 @@ type Booking struct {
 
 	EmployeeID                      string    `json:"employee_id" query:"employee_id" gorm:"type:varchar(36)"`
 	ManagerID                       string    `json:"manager_id" query:"manager_id" gorm:"type:varchar(36)"`
+	TelephoneCompany                string    `json:"telephone_company" query:"telephone_company" gorm:"type:varchar(10)"`
 	IsConsent                       bool      `json:"is_consent" query:"is_consent" gorm:"type:bool"`
 	CustomerSignatureLink           string    `json:"customer_signature_link" query:"customer_signature_link" gorm:"type:varchar(500)"`
 	CustomerPDFLink                 string    `json:"customer_pdf_link" query:"customer_pdf_link" gorm:"type:varchar(500)"`
