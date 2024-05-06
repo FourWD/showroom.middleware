@@ -9,6 +9,7 @@ import (
 type Booking struct {
 	midOrm.Booking
 	VehicleYear           string    `json:"vehicle_year" query:"vehicle_year" gorm:"type:varchar(4)"`
+	VehicleImg            string    `json:"vehicle_img" query:"vehicle_img" gorm:"type:text"`
 	IDCard                string    `json:"id_card" query:"id_card" gorm:"type:varchar(13)"`
 	CompanyRegisterNo     string    `json:"company_register_no" query:"company_register_no" gorm:"type:varchar(13)"`
 	BirthDate             time.Time `json:"birth_date" query:"birth_date" gorm:"type:date"`
