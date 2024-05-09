@@ -23,6 +23,8 @@ type Booking struct {
 	EmployeeSignatureDate time.Time `json:"employee_signature_date" query:"employee_signature_date"`
 	ManagerSignature      string    `json:"manager_signature" query:"manager_signature" gorm:"type:varchar(500)"`
 	ManagerSignatureDate  time.Time `json:"manager_signature_date" query:"manager_signature_date"`
+	Moo                   string    `json:"moo" query:"moo" gorm:"type:varchar(4)"`
+	Soi                   string    `json:"soi" query:"soi" gorm:"type:varchar(100)"`
 
 	EmployeeID                      string    `json:"employee_id" query:"employee_id" gorm:"type:varchar(36)"`
 	ManagerID                       string    `json:"manager_id" query:"manager_id" gorm:"type:varchar(36)"`
