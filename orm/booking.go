@@ -27,6 +27,7 @@ type Booking struct {
 	Soi                   string    `json:"soi" query:"soi" gorm:"type:varchar(100)"`
 	Floor                 string    `json:"floor" query:"floor" gorm:"type:varchar(3)"`
 
+	CompanyRegisterTypeID           string    `json:"company_register_type_id" query:"company_register_type_id" gorm:"type:varchar(2)"`
 	EmployeeID                      string    `json:"employee_id" query:"employee_id" gorm:"type:varchar(36)"`
 	ManagerID                       string    `json:"manager_id" query:"manager_id" gorm:"type:varchar(36)"`
 	TelephoneCompany                string    `json:"telephone_company" query:"telephone_company" gorm:"type:varchar(10)"`
